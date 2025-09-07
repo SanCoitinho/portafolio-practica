@@ -1,0 +1,51 @@
+.acerca-de-mi {
+  height: 100vh;
+  padding: 120px 150px;
+  text-align: center;
+  background:#cecece;
+}
+
+.acerca-de-mi h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.subrayado-acerca {
+  width: 150px;                 /* largo de la línea */
+  height: 4px;                 /* grosor */
+  background: linear-gradient(to right, #0667de, #03aede); /* degradado */
+  border: none;                /* quitar borde por defecto */
+  margin: 30px auto 30px auto; /* centrado con espacio arriba y abajo */
+  border-radius: 4px;          /* esquinas redondeadas */
+}
+
+.cajas-contenedor {
+  display: flex;            /* activa flexbox → pone los hijos en fila */
+  justify-content: center;  /* centra horizontalmente */
+  align-items: center;  /* alineación arriba */
+  gap: 40px;                /* espacio entre cajas */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cajas {
+  width: 40%;               /* cada caja ocupa ~la mitad */
+  height: 350px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 30px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-sizing: border-box;
+  border-top: 5px solid #0667de;  
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+

@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #222, #333);
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+  
+}
+
+.nav-logo {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  margin-left: -60px;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav li:hover {
+  transform: scale(1.1);
+}
+
+.nav li a:hover {
+  color: #0a88a8;
+}
+
+.nav a {
+  font-size: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style: none;
+}

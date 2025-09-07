@@ -1,0 +1,112 @@
+.habilidades {
+  height: 100vh;
+  padding: 120px 150px;
+  text-align: center;
+  background:#cecece;
+}
+
+.habilidades h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.subrayado-habilidades {
+  width: 150px;                 /* largo de la línea */
+  height: 4px;                 /* grosor */
+  background: linear-gradient(to right, #0667de, #03aede); /* degradado */
+  border: none;                /* quitar borde por defecto */
+  margin: 30px auto 30px auto; /* centrado con espacio arriba y abajo */
+  border-radius: 4px;          /* esquinas redondeadas */
+}
+
+.habilidades-contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.habilidad {
+  width: 22%;               /* cada caja ocupa aproximadamente 1/4 del espacio */
+  height: 350px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 0 20px 20px 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.habilidad {
+  position: relative;
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.habilidad::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to right, #0226d7, #03aede);
+  z-index: 0;
+}
+
+.habilidad h3 {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.habilidad p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #666;
+  margin-top: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.porcentaje {
+  margin-top: auto;
+  position: relative;
+  z-index: 1; 
+}
+
+.porcentaje span {
+  display: block;
+  text-align: right;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.barra {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.barra-progreso {
+  height: 100%;
+  background: linear-gradient(to right, #4CAF50, #8BC34A);
+  border-radius: 5px;
+}
