@@ -9,7 +9,7 @@
   align-items: center;
   height: 85px;
   padding: 5px 10%;
-  
+  z-index: 9999;
 }
 
 .nav-logo {

@@ -14,8 +14,8 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#acerca-de-mi">Acerca de mi</a></li>
         <li><a href="#habilidades">Habiliades</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -96,17 +96,83 @@
   </div>
 </section>
 
-    <section>
-      <h2>Proeyctos</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis porro perspiciatis, veritatis dolorum placeat doloribus fuga. Ab atque non, facere sed maxime error ea dolore consequuntur, reprehenderit perferendis nobis sint.
-      </p>
+    <section id="proyectos" class="proyectos">
+      <h2>Proyectos</h2>
+      <hr class="subrayado-proyectos">
+      <div class="proyectos-contenedor">
+        <div class="proyecto">
+          <div class="proyecto-header">Proyecto 1</div>
+          <div class="proyecto-body">
+            <h3>Sitio Web informativo</h3>
+            <p>Un sitio web sobre Ajedrez, que se aplica en abundancia HTML y CSS</p>
+            <a href="#">Ver proyecto →</a>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <div class="proyecto-header">Proyecto 2</div>
+          <div class="proyecto-body">
+            <h3>Sitio Web Interactivo</h3>
+            <p>Los usuarios pueden Sumar y Restar números en un contador, y también este mismo se puede reiniciar.
+              Se aplica HTML, CSS y JavaScript.
+            </p>
+            <a href="#">Ver proyecto →</a>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <div class="proyecto-header">Proyecto 3</div>
+          <div class="proyecto-body">
+            <h3>Sitio Web Sobre CSS y HTML</h3>
+            <p>Los usuarios podrán ver cómo usar CSS para practicar, e irá acompañado de un buen uso de HTML.</p>
+            <a href="#">Ver proyecto →</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section id="contacto" class="contacto">
       <h2>Contacto</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis porro perspiciatis, veritatis dolorum placeat doloribus fuga. Ab atque non, facere sed maxime error ea dolore consequuntur, reprehenderit perferendis nobis sint.
-      </p>
+      <hr class="subrayado-contacto">
+
+      <div class="contacto-container">
+        <!-- Info de contacto -->
+        <div class="contacto-info">
+          <div class="info-box">
+            <strong>📧 Email</strong>
+            <p>santiilopezz121@gmail.com</p>
+          </div>
+          <div class="info-box">
+            <strong>📱 Teléfono</strong>
+            <p>+598 92 468 273</p>
+          </div>
+          <div class="info-box">
+            <strong>📍 Ubicación</strong>
+            <p>Paysandú, Uruguay</p>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <form id="contactForm" class="contacto-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="tu@email.com">
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+
+          <button type="submit">Enviar Mensaje</button>
+
+          <!-- Mensaje dinámico -->
+          <p id="formMessage" style="margin-top:10px; font-size:0.9rem;"></p>
+        </form>
+      </div>
     </section>
   </main>
+  <footer>
+    <p>&copy; 2025 - Mi Portafolio</p>
+  </footer>
 </body>
 </html>

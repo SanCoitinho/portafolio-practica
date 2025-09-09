@@ -2,6 +2,9 @@
 @import url('./inicio.css');
 @import url('./acerca-de-mi.css');
 @import url('./habilidades.css');
+@import url('./proyectos.css');
+@import url('./contacto.css');
+@import url('./footer.css');
 
 * {
   box-sizing: border-box;
@@ -13,4 +16,8 @@
 
 body {
   background-color: white;
+}
+
+main {
+  padding-top: 90px; /* deja espacio para el menú fijo */
 }
